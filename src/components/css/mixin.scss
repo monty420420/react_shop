@@ -1,0 +1,48 @@
+@charset 'utf-8';
+$main_color_0: #ee174f;
+$main_color_1: #34373c;
+$main_color_2: #38639a;
+$main_color_3: #0072a4;
+$sub_color_1: #f7f7f7;
+$sub_color_2: #eeeeee;
+$sub_color_3: #131313;
+$sub_color_4: #3eb4e6;
+$gray_line_1: #e4e4e4;
+$gray_line_2: #dddddd;
+$gray_line_3: #c4c4c4;
+$gray_line_4: #b8b8b8;
+$gray_line_5: #5e5e5e;
+$font_color_0: #1b1b1b;
+$font_color_1: #ffdd23;
+$font_color_2: #6c6c6c;
+$font_color_3: #0089bd;
+$font_color_4: #4f4f4f;
+$font_color_5: #343434;
+$pagination_color_1: #414141;
+
+// ellipse 1line
+@mixin els {
+  overflow: hidden;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// ellipse 2line more
+@mixin lineClamp($height, $maxHeight, $num) {
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  height: $height;
+  max-height: $maxHeight;
+  overflow: hidden;
+}
+
+// effect
+@mixin easeInOutCirc($range, $time, $delay) {
+  transition-property: $range;
+  transition-duration: $time;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-delay: $delay;
+}
