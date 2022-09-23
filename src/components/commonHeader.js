@@ -7,8 +7,7 @@ function CommonHeader(props) {
 <header id="CommonHeader" className='header'>
   <section className='header_container'>
     <div className='container'>
-      <img className="container_logo" src="img/adidas_logo.png" alt="main logo"  />
-
+    <img className="container_logo" src="img/adidas_logo.png" alt="main logo"  />
     <div className='container_menu'>
         <div className='menu'>
             <div className='menu_gender'>
@@ -22,6 +21,13 @@ function CommonHeader(props) {
             <Link className='menu_type_sale' to="/">SALE</Link>
             </div>
         </div>
+    </div>
+    <div className='container_info'>
+      <div className='info'>
+        <div className='info_search'>search</div>
+        <div className='info_mypage'>mypage</div>
+        <div className='info_basket'>basket</div>
+      </div>
     </div>
     </div>
   </section>
